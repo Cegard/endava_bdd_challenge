@@ -1,8 +1,10 @@
 Lookup a station status, street and landmarks
+
 Narrative:
 In order to know a station street, landmarks and status
 As a bike user
 I want to look up for the station street, landmarks and status
+
 
 
 Scenario: Looking up for the street and nearby landmarks of a given station
