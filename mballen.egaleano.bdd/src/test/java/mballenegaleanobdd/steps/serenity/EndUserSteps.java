@@ -1,12 +1,14 @@
 package mballenegaleanobdd.steps.serenity;
 
 import mballenegaleanobdd.pages.DictionaryPage;
-import mballenegaleanobdd.pages.DictionaryPage;
 import net.thucydides.core.annotations.Step;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItem;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
 
 public class EndUserSteps {
 
