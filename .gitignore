@@ -1,9 +1,9 @@
 ###Other###
-/out
+*/out
 */target/*
 *.jar
 *.class
-/.idea
+*/.idea
 *.iml
 *.txt
 docs/
