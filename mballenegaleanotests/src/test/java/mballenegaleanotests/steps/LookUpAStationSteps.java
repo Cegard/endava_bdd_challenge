@@ -7,14 +7,26 @@ import org.jbehave.core.annotations.When;
 
 import mballenegaleanotests.steps.serenity.EndUserSteps;
 
-public class DefinitionSteps {
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.is;
+
+public class LookUpAStationSteps {
+
+    String station_name;
 
     @Steps
     EndUserSteps endUser;
 
-    @Given("the user is on the Wikionary home page")
-    public void givenTheUserIsOnTheWikionaryHomePage() {
-        endUser.is_the_home_page();
+    @Given("I want to know the street of $station_name station and nearby landmarks")
+    public void givenIWantToKnowTheStreetOfAnyStationAndNearByLandmarks(String station_name ) {
+        this.station_name = station_name;
+    }
+
+    @When("I insert $station_name as the query in API")
+    public void whenIInsertStationNameAsTheQueryInAPI(){
+
     }
 
     @When("the user looks up the definition of the word '$word'")
@@ -26,5 +38,10 @@ public class DefinitionSteps {
     public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
         endUser.should_see_definition(definition);
     }
+
+
+
+
+
 
 }
