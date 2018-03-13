@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mballenegaleanotests.AcceptanceTestSuite" time="8.337" tests="35" errors="0" skipped="20" failures="3">
+  <properties>
+    <property name="idea.version" value="2017.3.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mballen\Documents\Repositorios\Internship\BDD\jbehave_internship\mballenegaleanotests"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\mballen\Documents\Repositorios\Internship\BDD\jbehave_internship\mballenegaleanotests"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\mballen\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.4\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Users\mballen\AppData\Local\Programs\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\HashiCorp\Vagrant\bin;C:\Users\mballen\AppData\Local\Microsoft\WindowsApps;C:\Users\mballen\AppData\Local\Programs\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\mballen\AppData\Roaming\Composer\vendor\bin;C:\Users\mballen\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\mballen"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mballen"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.4\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.3.4 verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.4\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="BeforeStories" classname="java.lang.Object" time="0.052"/>
+  <testcase name="[PENDING] Given I want to know the streets that are disrupted today" classname="[PENDING] Given I want to know the streets that are disrupted today" time="0">
+    <skipped/>
+    <system-out><![CDATA[Running story stories/DisruptionStory.story
+
+(stories/DisruptionStory.story)
+Scenario: Getting data about disrupted streets in London today
+Using timeout for story DisruptionStory.story of 300 secs.
+Given I want to know the streets that are disrupted today (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.jbehave.embedders.monitors.ReportingEmbedderMonitor - 640113647story running with path stories/DisruptionStory.story
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - Test Suite Started: Disruption story
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Getting data about disrupted streets in London today
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] When I select todays date" classname="[PENDING] When I select todays date" time="0">
+    <skipped/>
+    <system-out><![CDATA[When I select todays date (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Then I should get the streets that are disrupted today" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then I should get the streets that are disrupted today (NOT PERFORMED)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Getting data about disrupted streets in London today" classname="Scenario: Getting data about disrupted streets in London today" time="0.213"/>
+  <testcase name="[PENDING] Given I want to know the streets that were disrupted yesterday" classname="[PENDING] Given I want to know the streets that were disrupted yesterday" time="0">
+    <skipped/>
+    <system-out><![CDATA[Scenario: Getting data about disrupted streets in London today
+Given I want to know the streets that were disrupted yesterday (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Getting data about disrupted streets in London today
+---------------------------------------------------------------------------------
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Getting data about disrupted streets in London today
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] When I select yesterdays date" classname="[PENDING] When I select yesterdays date" time="0">
+    <skipped/>
+    <system-out><![CDATA[When I select yesterdays date (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Then I should get the streets that were disrupted yesterday" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then I should get the streets that were disrupted yesterday (NOT PERFORMED)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Getting data about disrupted streets in London today​" classname="Scenario: Getting data about disrupted streets in London today​" time="0.03"/>
+  <testcase name="[PENDING] Given I want to know the streets that are disrupted last monday" classname="[PENDING] Given I want to know the streets that are disrupted last monday" time="0">
+    <skipped/>
+    <system-out><![CDATA[Scenario: Getting data about disrupted streets in London today
+Given I want to know the streets that are disrupted last monday (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Getting data about disrupted streets in London today
+---------------------------------------------------------------------------------
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Getting data about disrupted streets in London today
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] When I select last monday date" classname="[PENDING] When I select last monday date" time="0">
+    <skipped/>
+    <system-out><![CDATA[When I select last monday date (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Then I should get the streets that were disrupted last monday" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then I should get the streets that were disrupted last monday (NOT PERFORMED)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Getting data about disrupted streets in London today​​" classname="Scenario: Getting data about disrupted streets in London today​​" time="0.012"/>
+  <testcase name="DisruptionStory.story" classname="DisruptionStory.story" time="0.018"/>
+  <testcase name="Given I want to know the street of Hoxton station and nearby landmarks" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="3.067"/>
+  <testcase name="When I insert Hoxton as the query in API" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="3.444"/>
+  <testcase name="Then I should get Fanshaw Street, Hoxton" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="0.713">
+    <failure message="1 expectation failed.&#10;JSON path [0].commonName doesn&apos;t match.&#10;Expected: a string containing &quot;Hoxtonghjk&quot;&#10;  Actual: Windsor Terrace, Hoxton&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+JSON path [0].commonName doesn't match.
+Expected: a string containing "Hoxtonghjk"
+  Actual: Windsor Terrace, Hoxton
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:264)
+	at mballenegaleanotests.steps.LookUpAStationSteps.whenTheUserLooksUpTheDefinitionOf(LookUpAStationSteps.java:72)
+</failure>
+    <system-out><![CDATA[Then I should get Fanshaw Street, Hoxton (FAILED)
+(java.lang.AssertionError: 1 expectation failed.
+JSON path [0].commonName doesn't match.
+Expected: a string containing "Hoxtonghjk"
+  Actual: Windsor Terrace, Hoxton
+)
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario: Looking up for the street and nearby landmarks of a given station" classname="Scenario: Looking up for the street and nearby landmarks of a given station" time="0.729">
+    <failure message="scenario failed!" type="java.lang.AssertionError">java.lang.AssertionError: scenario failed!
+	at de.codecentric.jbehave.junit.monitoring.JUnitScenarioReporter.afterScenario(JUnitScenarioReporter.java:218)
+	at org.jbehave.core.reporters.DelegatingStoryReporter.afterScenario(DelegatingStoryReporter.java:43)
+	at org.jbehave.core.reporters.ConcurrentStoryReporter.afterScenario(ConcurrentStoryReporter.java:176)
+	at org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:890)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:811)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:784)
+	at org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:416)
+	at org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:387)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+    <system-out><![CDATA[
+java.lang.AssertionError: 1 expectation failed.
+JSON path [0].commonName doesn't match.
+Expected: a string containing "Hoxtonghjk"
+  Actual: Windsor Terrace, Hoxton
+
+	(reflection-construct)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	(reflection-invoke)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	(groovy-call)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	(groovy-call)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:264)
+	at mballenegaleanotests.steps.LookUpAStationSteps.whenTheUserLooksUpTheDefinitionOf(LookUpAStationSteps.java:72)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...
+]]></system-out>
+  </testcase>
+  <testcase name="[PENDING] Given I want to know the state of Soho Square station and its occupancy" classname="[PENDING] Given I want to know the state of Soho Square station and its occupancy" time="0">
+    <skipped/>
+    <system-out><![CDATA[Scenario: Looking for a station status and occupancy
+Given I want to know the state of Soho Square station and its occupancy (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Looking up for the street and nearby landmarks of a given station
+--------------------------------------------------------------------------
+[pool-1-thread-1] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Then I should get ?Fanshaw Street, Hoxton?
+[pool-1-thread-1] ERROR net.serenitybdd.core.Serenity - 1 expectation failed.JSON path [0].commonName doesn't match.Expected: a string containing "Hoxtonghjk"  Actual: Windsor Terrace, Hoxton
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Looking for a station status and occupancy
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] When I insert Soho Square in the search field" classname="[PENDING] When I insert Soho Square in the search field" time="0">
+    <skipped/>
+    <system-out><![CDATA[When I insert Soho Square in the search field (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Then I should get Soho Square status and its occupancy" classname="mballenegaleanotests.steps.LookUpAStationSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then I should get Soho Square status and its occupancy (NOT PERFORMED)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Looking for a station status and occupancy" classname="Scenario: Looking for a station status and occupancy" time="0.008"/>
+  <testcase name="LookupAStation.story" classname="LookupAStation.story" time="0.012">
+    <failure message="story failed!" type="java.lang.AssertionError">java.lang.AssertionError: story failed!
+	at de.codecentric.jbehave.junit.monitoring.JUnitScenarioReporter.afterStory(JUnitScenarioReporter.java:143)
+	at org.jbehave.core.reporters.DelegatingStoryReporter.afterStory(DelegatingStoryReporter.java:49)
+	at org.jbehave.core.reporters.ConcurrentStoryReporter.afterStory(ConcurrentStoryReporter.java:122)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:792)
+	at org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:416)
+	at org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:387)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Looking for a station status and occupancy
+---------------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] Given I am in 76 Windsor Dr, Orpington BR6 6HF, UK" classname="[PENDING] Given I am in 76 Windsor Dr, Orpington BR6 6HF, UK" time="0">
+    <skipped/>
+    <system-out><![CDATA[Running story stories/RouteTimes.story
+Ask for a route time on bicycle
+(stories/RouteTimes.story)
+Narrative:
+In order to administrate my time
+As a bicycle rider of the London city
+I want to know the time I'll spent from a given address to another
+Scenario: Get estimated route time
+Given I am in 76 Windsor Dr, Orpington BR6 6HF, UK (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.jbehave.embedders.monitors.ReportingEmbedderMonitor - 640113647story running with path stories/RouteTimes.story
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - Test Suite Started: Ask for a route time on bicycle
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Get estimated route time
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] And I am going to the address 3 Woodside, Orpington BR6 6JR, UK" classname="[PENDING] And I am going to the address 3 Woodside, Orpington BR6 6JR, UK" time="0">
+    <skipped/>
+    <system-out><![CDATA[And I am going to the address 3 Woodside, Orpington BR6 6JR, UK (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] When I ask for the route time" classname="[PENDING] When I ask for the route time" time="0">
+    <skipped/>
+    <system-out><![CDATA[When I ask for the route time (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] Then The answer from the program should be 1 mins" classname="[PENDING] Then The answer from the program should be 1 mins" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then The answer from the program should be 1 mins (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Get estimated route time" classname="Scenario: Get estimated route time" time="0"/>
+  <testcase name="[PENDING] Given I am in 123 fake street" classname="[PENDING] Given I am in 123 fake street" time="0">
+    <skipped/>
+    <system-out><![CDATA[Scenario: Get estimated route time for a non-existing address
+Given I am in 123 fake street (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Get estimated route time
+---------------------------------------------------------------------------------
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Get estimated route time for a non-existing address
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] And I am going to the address 3 Woodside, Orpington BR6 6JR, UK​" classname="[PENDING] And I am going to the address 3 Woodside, Orpington BR6 6JR, UK​" time="0">
+    <skipped/>
+    <system-out><![CDATA[And I am going to the address 3 Woodside, Orpington BR6 6JR, UK (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] When I ask for the route time​" classname="[PENDING] When I ask for the route time​" time="0">
+    <skipped/>
+    <system-out><![CDATA[When I ask for the route time (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="[PENDING] Then The answer from the program should be Sorry, we can&apos;t find a journey matching your criteria" classname="[PENDING] Then The answer from the program should be Sorry, we can&apos;t find a journey matching your criteria" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then The answer from the program should be Sorry, we can't find a journey matching your criteria (PENDING)
+]]></system-out>
+    <system-err><![CDATA[[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - TEST PENDING
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Get estimated route time for a non-existing address" classname="Scenario: Get estimated route time for a non-existing address" time="0.015"/>
+  <testcase name="RouteTimes.story" classname="RouteTimes.story" time="0.015"/>
+  <testcase name="AfterStories" classname="java.lang.Object" time="0.009"/>
+</testsuite>

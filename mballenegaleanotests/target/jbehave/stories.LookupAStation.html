@@ -1,0 +1,66 @@
+<div class="story">
+<h1>Lookup a station status, street and landmarks</h1>
+<div class="path">stories/LookupAStation.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> know a station street, landmarks and status</div>
+<div class="element asA"><span class="keyword asA">As a</span> bike user</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> look up for the station street, landmarks and status</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Looking up for the street and nearby landmarks of a given station</h2>
+<div class="step successful">Given I want to know the street of <span class="step parameter">Hoxton</span> station and nearby landmarks</div>
+<div class="step successful">When I insert Hoxton as the query in API</div>
+<div class="step failed">Then I should get <span class="step parameter">Fanshaw Street, Hoxton</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: 1 expectation failed.
+JSON path [0].commonName doesn't match.
+Expected: a string containing &quot;Hoxtonghjk&quot;
+  Actual: Windsor Terrace, Hoxton
+</span></div>
+<pre class="failure">java.lang.AssertionError: 1 expectation failed.
+JSON path [0].commonName doesn't match.
+Expected: a string containing &quot;Hoxtonghjk&quot;
+  Actual: Windsor Terrace, Hoxton
+
+	(reflection-construct)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	(reflection-invoke)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	(groovy-call)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	(groovy-call)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:264)
+	at mballenegaleanotests.steps.LookUpAStationSteps.whenTheUserLooksUpTheDefinitionOf(LookUpAStationSteps.java:72)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: Looking for a station status and occupancy</h2>
+<div class="step pending">Given I want to know the state of Soho Square station and its occupancy <span class="keyword pending">(PENDING)</span></div>
+<div class="step pending">When I insert Soho Square in the search field <span class="keyword pending">(PENDING)</span></div>
+<div class="step notPerformed">Then I should get <span class="step parameter">Soho Square status and its occupancy</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div><pre class="pending">@Given(&quot;I want to know the state of Soho Square station and its occupancy&quot;)
+@Pending
+public void givenIWantToKnowTheStateOfSohoSquareStationAndItsOccupancy() {
+  // PENDING
+}
+</pre></div>
+<div><pre class="pending">@When(&quot;I insert Soho Square in the search field&quot;)
+@Pending
+public void whenIInsertSohoSquareInTheSearchField() {
+  // PENDING
+}
+</pre></div>
+</div>
+</div>

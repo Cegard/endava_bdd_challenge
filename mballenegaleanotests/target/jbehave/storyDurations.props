@@ -1,0 +1,8 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue Mar 13 15:21:55 COT 2018
+stories/DisruptionStory.story=0
+stories/LookupAStation.story=7000
+stories/RouteTimes.story=0
+threads=1
+total=7000
+threadAverage=7000
