@@ -6,57 +6,12 @@
 </narrative>
 <scenario keyword="Scenario:" title="Looking up for the street and nearby landmarks of a given station">
 <step outcome="successful">Given I want to know the street of <parameter>Hoxton</parameter> station and nearby landmarks</step>
-<step outcome="successful">When I insert Hoxton as the query in API</step>
-<step outcome="failed" keyword="FAILED">Then I should get <parameter>Fanshaw Street, Hoxton</parameter><failure>java.lang.AssertionError: 1 expectation failed.
-JSON path [0].commonName doesn&apos;t match.
-Expected: a string containing &quot;Hoxtonghjk&quot;
-  Actual: Windsor Terrace, Hoxton
-</failure></step>
-<failure>java.lang.AssertionError: 1 expectation failed.
-JSON path [0].commonName doesn&apos;t match.
-Expected: a string containing &quot;Hoxtonghjk&quot;
-  Actual: Windsor Terrace, Hoxton
-
-	(reflection-construct)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
-	(reflection-invoke)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	(groovy-call)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
-	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
-	(groovy-call)
-	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
-	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:264)
-	at mballenegaleanotests.steps.LookUpAStationSteps.whenTheUserLooksUpTheDefinitionOf(LookUpAStationSteps.java:72)
-	(reflection-invoke)
-	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
-	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
-...</failure>
+<step outcome="successful">When I insert the station name as the query in API</step>
+<step outcome="successful">Then I should get Fanshaw Street inside Json object response</step>
 </scenario>
 <scenario keyword="Scenario:" title="Looking for a station status and occupancy">
-<step outcome="pending" keyword="PENDING">Given I want to know the state of Soho Square station and its occupancy</step>
-<step outcome="pending" keyword="PENDING">When I insert Soho Square in the search field</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then I should get <parameter>Soho Square status and its occupancy</parameter></step>
-<pendingMethod>@Given(&quot;I want to know the state of Soho Square station and its occupancy&quot;)
-@Pending
-public void givenIWantToKnowTheStateOfSohoSquareStationAndItsOccupancy() {
-  // PENDING
-}
-</pendingMethod>
-<pendingMethod>@When(&quot;I insert Soho Square in the search field&quot;)
-@Pending
-public void whenIInsertSohoSquareInTheSearchField() {
-  // PENDING
-}
-</pendingMethod>
+<step outcome="successful">Given I want to know the state of <parameter>BikePoints_19</parameter> and its occupancy</step>
+<step outcome="successful">When I request API for the state of <parameter>BikePoints_19</parameter></step>
+<step outcome="successful">Then I should get station status and its occupancy</step>
 </scenario>
 </story>

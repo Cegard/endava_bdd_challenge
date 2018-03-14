@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Lookup a station status, street and landmarks" skipped="1" tests="2" time="7.26" timestamp="2018-03-72 03:21:48"><testcase name="Looking up for the street and nearby landmarks of a given station"><failure message="1 expectation failed.&#10;JSON path [0].commonName doesn't match.&#10;Expected: a string containing &quot;Hoxtonghjk&quot;&#10;  Actual: Windsor Terrace, Hoxton&#10;" type="java.lang.AssertionError">1 expectation failed.
-JSON path [0].commonName doesn't match.
-Expected: a string containing "Hoxtonghjk"
-  Actual: Windsor Terrace, Hoxton
-</failure><system-err>1 expectation failed.
-JSON path [0].commonName doesn't match.
-Expected: a string containing "Hoxtonghjk"
-  Actual: Windsor Terrace, Hoxton
-&#13;
-mballenegaleanotests.steps.LookUpAStationSteps.whenTheUserLooksUpTheDefinitionOf(LookUpAStationSteps.java:72)&#13;
-</system-err></testcase><testcase name="Looking for a station status and occupancy"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Lookup a station status, street and landmarks" skipped="0" tests="2" time="8.7" timestamp="2018-03-72 07:19:07"><testcase name="Looking up for the street and nearby landmarks of a given station"/><testcase name="Looking for a station status and occupancy"/></testsuite>

@@ -7,7 +7,7 @@
 *.iml
 *.txt
 docs/
-
+.target
 ### Eclipse ###
 
 .metadata

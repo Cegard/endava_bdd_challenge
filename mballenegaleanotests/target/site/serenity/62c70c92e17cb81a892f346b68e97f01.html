@@ -62,7 +62,7 @@
             <a href="5f5dee50b3955739bfb580c79f480d2e.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-03-2018 15:21</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-03-2018 19:19</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -97,9 +97,9 @@ I want to look up for the station street, landmarks and status
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-square-o pending-icon fa-3x' title='PENDING'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
+                                <span class="success-color">
                                     Looking For A Station Status And Occupancy
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -133,55 +133,129 @@ I want to look up for the station street, landmarks and status
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Given I want to know the state of Soho Square station and its occupancy</span>
+                            <span class="top-level-step">Given I want to know the state of {BikePoints_19} and its occupancy</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.74s</span></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">When I insert Soho Square in the search field</span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">When I request API for the state of {BikePoints_19}</span>
+                            </a>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.74s</span></td>
                 </tr>
-                <tr class="test-IGNORED">
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">GET https://api.tfl.gov.uk/BikePoint/BikePoints_19?app_key=9c91a07926c0b50e203764c21b312247&app_id=6325577f</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-3">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-3" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                GET https://api.tfl.gov.uk/BikePoint/BikePoints_19?app_key=9c91a07926c0b50e203764c21b312247&app_id=6325577f
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: null</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Accept=*/*</pre>
+                                    <h5>Content Body</h5>
+                                    <pre></pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Wed, 14 Mar 2018 00:19:16 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 392<br>Connection: keep-alive<br>Set-Cookie: __cfduid=d6767bf50b9eb61a5ddb01a7b163c74a51520986756; expires=Thu, 14-Mar-19 00:19:16 GMT; path=/; domain=.tfl.gov.uk; HttpOnly<br>Access-Control-Allow-Headers: Content-Type<br>Access-Control-Allow-Methods: GET,POST,PUT,DELETE,OPTIONS<br>Access-Control-Allow-Origin: *<br>Age: 0<br>Api-Entity-Payload: Place<br>Cache-Control: public, must-revalidate, max-age=30, s-maxage=60<br>Content-Encoding: gzip<br>Via: 1.1 varnish<br>X-AspNet-Version: 4.0.30319<br>X-Backend: api<br>X-Banning: <br>X-Cache: MISS<br>X-Cacheable: Yes. Cacheable<br>X-TTL: 60.000<br>X-TTL-RULE: 0<br>X-Varnish: 2065821925<br>Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;<br>Server: cloudflare<br>CF-RAY: 3fb291594aa31092-MDE</pre>
+                                <h5>Response Body</h5>
+                                <pre>{<br>    &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities&quot;,<br>    &quot;id&quot;: &quot;BikePoints_19&quot;,<br>    &quot;url&quot;: &quot;/Place/BikePoints_19&quot;,<br>    &quot;commonName&quot;: &quot;Taviton Street, Bloomsbury&quot;,<br>    &quot;placeType&quot;: &quot;BikePoint&quot;,<br>    &quot;additionalProperties&quot;: [<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;TerminalName&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;001009&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;Installed&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;true&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;Locked&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;false&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;InstallDate&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;1278426720000&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;RemovalDate&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;Temporary&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;false&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;NbBikes&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;24&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;NbEmptyDocks&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;4&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        },<br>        {<br>            &quot;$type&quot;: &quot;Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities&quot;,<br>            &quot;category&quot;: &quot;Description&quot;,<br>            &quot;key&quot;: &quot;NbDocks&quot;,<br>            &quot;sourceSystemKey&quot;: &quot;BikePoints&quot;,<br>            &quot;value&quot;: &quot;30&quot;,<br>            &quot;modified&quot;: &quot;2018-03-13T23:47:14.217Z&quot;<br>        }<br>    ],<br>    &quot;children&quot;: [<br>        <br>    ],<br>    &quot;lat&quot;: 51.52505,<br>    &quot;lon&quot;: -0.131161<br>}</pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre>__cfduid=d6767bf50b9eb61a5ddb01a7b163c74a51520986756;Path=/;Domain=.tfl.gov.uk;HttpOnly;Expires=3/14/19 12:19 AM</pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="2"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Then I should get {Soho Square status and its occupancy}</span>
+                            <span class="top-level-step">Then I should get station status and its occupancy</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">IGNORED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.03s</span></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.01s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>1.52s</em></span></td>
                 </tr>
 
             </table>
