@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Lookup a station status, street and landmarks" skipped="0" tests="2" time="9.45" timestamp="2018-03-73 03:42:13"><testcase name="Looking up for the street and nearby landmarks of a given station"/><testcase name="Looking for a station status and occupancy"/></testsuite>

@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Ask for a route time on bicycle","Get estimated route time","PENDING","2018-03-14T15:42:23.160-05:00","0.0","0.01"
-"Ask for a route time on bicycle","Get estimated route time for a non-existing address","PENDING","2018-03-14T15:42:23.171-05:00","0.0","0.01"
-"Disruption story","Getting data about disrupted streets in London today","PENDING","2018-03-14T15:42:13.321-05:00","0.0","0.16"

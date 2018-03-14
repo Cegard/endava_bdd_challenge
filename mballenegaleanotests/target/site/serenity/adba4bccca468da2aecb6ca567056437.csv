@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Lookup a station status, street and landmarks","Looking for a station status and occupancy","SUCCESS","2018-03-14T15:42:20.879-05:00","0.0","2.27"
-"Lookup a station status, street and landmarks","Looking up for the street and nearby landmarks of a given station","SUCCESS","2018-03-14T15:42:13.695-05:00","0.0","7.18"
