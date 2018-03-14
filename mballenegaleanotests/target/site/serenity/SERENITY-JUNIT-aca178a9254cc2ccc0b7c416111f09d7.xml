@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Ask for a route time on bicycle" skipped="2" tests="2" time="0.02" timestamp="2018-03-72 07:19:16"><testcase name="Get estimated route time"><skipped/></testcase><testcase name="Get estimated route time for a non-existing address"><skipped/></testcase></testsuite>
