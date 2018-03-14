@@ -1,0 +1,71 @@
+<story path="stories/DisruptionStory.story" title="">
+<scenario keyword="Scenario:" title="Getting data about disrupted streets in London today">
+<step outcome="pending" keyword="PENDING">Given I want to know the streets that are disrupted today</step>
+<step outcome="pending" keyword="PENDING">When I select todays date</step>
+<step outcome="pending" keyword="PENDING">Then I should get the streets that are disrupted today</step>
+<pendingMethod>@Given(&quot;I want to know the streets that are disrupted today&quot;)
+@Pending
+public void givenIWantToKnowTheStreetsThatAreDisruptedToday() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;I select todays date&quot;)
+@Pending
+public void whenISelectTodaysDate() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should get the streets that are disrupted today&quot;)
+@Pending
+public void thenIShouldGetTheStreetsThatAreDisruptedToday() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="Getting data about disrupted streets in London today">
+<step outcome="pending" keyword="PENDING">Given I want to know the streets that were disrupted yesterday</step>
+<step outcome="pending" keyword="PENDING">When I select yesterdays date</step>
+<step outcome="pending" keyword="PENDING">Then I should get the streets that were disrupted yesterday</step>
+<pendingMethod>@Given(&quot;I want to know the streets that were disrupted yesterday&quot;)
+@Pending
+public void givenIWantToKnowTheStreetsThatWereDisruptedYesterday() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;I select yesterdays date&quot;)
+@Pending
+public void whenISelectYesterdaysDate() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should get the streets that were disrupted yesterday&quot;)
+@Pending
+public void thenIShouldGetTheStreetsThatWereDisruptedYesterday() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="Getting data about disrupted streets in London today">
+<step outcome="pending" keyword="PENDING">Given I want to know the streets that are disrupted last monday</step>
+<step outcome="pending" keyword="PENDING">When I select last monday date</step>
+<step outcome="pending" keyword="PENDING">Then I should get the streets that were disrupted last monday</step>
+<pendingMethod>@Given(&quot;I want to know the streets that are disrupted last monday&quot;)
+@Pending
+public void givenIWantToKnowTheStreetsThatAreDisruptedLastMonday() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;I select last monday date&quot;)
+@Pending
+public void whenISelectLastMondayDate() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I should get the streets that were disrupted last monday&quot;)
+@Pending
+public void thenIShouldGetTheStreetsThatWereDisruptedLastMonday() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

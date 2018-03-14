@@ -1,0 +1,17 @@
+<story path="stories/LookupAStation.story" title="Lookup a station status, street and landmarks">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">know a station street, landmarks and status</inOrderTo>
+  <asA keyword="As a">bike user</asA>
+  <iWantTo keyword="I want to">look up for the station street, landmarks and status</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Looking up for the street and nearby landmarks of a given station">
+<step outcome="successful">Given I want to know the street of <parameter>Hoxton</parameter> station and nearby landmarks</step>
+<step outcome="successful">When I insert the station name as the query in API</step>
+<step outcome="successful">Then I should get Fanshaw Street inside Json object response</step>
+</scenario>
+<scenario keyword="Scenario:" title="Looking for a station status and occupancy">
+<step outcome="successful">Given I want to know the state of <parameter>BikePoints_19</parameter> and its occupancy</step>
+<step outcome="successful">When I request API for the state of <parameter>BikePoints_19</parameter></step>
+<step outcome="successful">Then I should get station status and its occupancy</step>
+</scenario>
+</story>
