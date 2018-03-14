@@ -8,6 +8,7 @@
 *.txt
 docs/
 .target
+.idea
 ### Eclipse ###
 
 .metadata
