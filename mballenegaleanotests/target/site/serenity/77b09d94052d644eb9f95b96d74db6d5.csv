@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Ask for a route time on bicycle","Get estimated route time","PENDING","2018-03-13T19:19:16.688-05:00","0.0","0.01"
-"Ask for a route time on bicycle","Get estimated route time for a non-existing address","PENDING","2018-03-13T19:19:16.697-05:00","0.0","0.01"
