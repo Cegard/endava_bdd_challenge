@@ -13,13 +13,7 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.greaterThan;
 
 
-public class LookUpAStationSteps {
-
-    String app_key = "9c91a07926c0b50e203764c21b312247";
-    String app_id = "6325577f";
-    com.jayway.restassured.specification.RequestSpecification requestSpecification;
-    Response response;
-
+public class LookUpAStationSteps extends Steps {
 
     @Step
     @Given("I want to know the street of $station_name station and nearby landmarks")
