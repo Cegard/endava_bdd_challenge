@@ -2,7 +2,6 @@ package mballenegaleanotests.steps;
 
 import com.jayway.restassured.response.Response;
 import net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Step;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
