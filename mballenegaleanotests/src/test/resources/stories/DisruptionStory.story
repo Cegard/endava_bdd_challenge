@@ -8,9 +8,9 @@ I want to know where are the disruptions in any day at London
 
 #Gets a list of disrupted streets. If no date filters are provided, current disruptions are returned
 Scenario: Getting data about disrupted streets in London today
-Given I want to know the streets that are disrupted today
-When I select todays date
-Then I should get the streets that are disrupted today
+Given I want to know the streets that were disrupted between 10 Mar 2018 and 12 Mar 2018
+When I send the request to the API
+Then I should get Queen Victoria Street (EC2R,EC3V) in the response body
 
 Scenario: Getting data about disrupted streets in London today
 Given I want to know the streets that were disrupted yesterday

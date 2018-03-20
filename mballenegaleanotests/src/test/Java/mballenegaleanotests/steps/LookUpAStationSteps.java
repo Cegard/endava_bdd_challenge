@@ -32,7 +32,7 @@ public class LookUpAStationSteps extends Steps {
 
     @Step
     @Then("I should get $street_name inside Json object response")
-    public void whenTheUserLooksUpTheDefinitionOf() {
+    public void thenIGetTheStreetNameInsideResponse() {
         response.then()
                 .contentType(String.valueOf(JSON))
                 .statusCode(200)
@@ -57,8 +57,6 @@ public class LookUpAStationSteps extends Steps {
     @Step
     @Then("I should get station status and its occupancy")
     public void IShouldGetStationStatusAndItsOccupancy() {
-
-        //int hey =  Integer.parseInt(response.body("additionalProperties[6].value"));
         response.then()
                 .contentType(String.valueOf(JSON))
                 .statusCode(200)
