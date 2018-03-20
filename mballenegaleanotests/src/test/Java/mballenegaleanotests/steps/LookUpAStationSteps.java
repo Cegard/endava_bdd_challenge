@@ -13,12 +13,18 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.greaterThan;
 
 
-public class LookUpAStationSteps extends Steps {
+public class LookUpAStationSteps{
+
+    String app_key = "9c91a07926c0b50e203764c21b312247";
+    String app_id = "6325577f";
+    com.jayway.restassured.specification.RequestSpecification requestSpecification;
+    Response response;
+
 
     @Step
     @Given("I want to know the street of $station_name station and nearby landmarks")
     public void givenIWantToKnowTheStreetOfAnyStationAndNearByLandmarks(String station_name ) {
-        requestSpecification = SerenityRest.given()
+        this.requestSpecification = SerenityRest.given()
                 .param("query", station_name)
                 .param("app_key", this.app_key)
                 .param("app_id", this.app_id);
@@ -27,13 +33,13 @@ public class LookUpAStationSteps extends Steps {
     @Step
     @When("I insert $station_name as the query in API")
     public void whenIInsertStationNameAsTheQueryInAPI(){
-        response = requestSpecification.when().get("https://api.tfl.gov.uk/BikePoint/Search");
+        this.response = requestSpecification.when().get("https://api.tfl.gov.uk/BikePoint/Search");
     }
 
     @Step
     @Then("I should get $street_name inside Json object response")
     public void thenIGetTheStreetNameInsideResponse() {
-        response.then()
+        this.response.then()
                 .contentType(String.valueOf(JSON))
                 .statusCode(200)
                 .body("[0].commonName", containsString(((RequestSpecificationDecorated) requestSpecification).getRequestParams().get("query").toString()));
@@ -43,7 +49,7 @@ public class LookUpAStationSteps extends Steps {
     @Step
     @Given("I want to know the state of $station_name and its occupancy")
     public void IWantToKnowTheStateOfAStationAndItsOccupancy(String station_code){
-        requestSpecification = SerenityRest.given()
+        this.requestSpecification = SerenityRest.given()
                 .param("app_key", this.app_key)
                 .param("app_id", this.app_id);
     }
@@ -51,13 +57,13 @@ public class LookUpAStationSteps extends Steps {
     @Step
     @When("I request API for the state of $station_id")
     public void whenIRequestAPIForTheStateOfTheStation(String station_id){
-        response = requestSpecification.when().get("https://api.tfl.gov.uk/BikePoint/"+station_id);
+        this.response = requestSpecification.when().get("https://api.tfl.gov.uk/BikePoint/"+station_id);
     }
 
     @Step
     @Then("I should get station status and its occupancy")
     public void IShouldGetStationStatusAndItsOccupancy() {
-        response.then()
+        this.response.then()
                 .contentType(String.valueOf(JSON))
                 .statusCode(200)
                 .body("additionalProperties[6].value", greaterThan("0"));
