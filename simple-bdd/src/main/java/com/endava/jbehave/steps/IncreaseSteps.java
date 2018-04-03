@@ -2,12 +2,11 @@ package com.endava.jbehave.steps;
 
 import static org.junit.Assert.assertTrue;
 
-
 import java.util.Random;
 
-
-
-import net.thucydides.core.annotations.Step;
+import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Then;
+import org.jbehave.core.annotations.When;
 
 public class IncreaseSteps {
 	private int counter;
@@ -15,19 +14,20 @@ public class IncreaseSteps {
 
 
 
-	@Step("Given the counter has any integral value")
+	@Given("the counter has any integral value")
 	public void counterHasAnyIntegralValue() {
-		counter = new Random().nextInt(5);
+		counter = new Random().nextInt();
 		previousValue = counter;
 	}
 
-	@Step("When the user increases the counter")
+	@When("the user increases the counter")
 	public void increasesTheCounter() {
 		counter++;
 	}
 
-	@Step("Then the value of the counter must be 1 greater than previous value")
+	@Then("the value of the counter must be 1 greater than previous value")
 	public void theValueOfTheCounterMustBe1Greater() {
-		assertTrue(counter - previousValue == 1);
+		assertTrue(1 == counter - previousValue);
 	}
 }
+
